@@ -1,0 +1,6 @@
+#include <iostream>
+#include <string>
+using namespace std;
+void printPrinter(string s);
+int main(){string s= "void printPrinter(string s) { cout << \"#include<iostream>\\n#include<string>\\nusing namespace std;\\nvoid printPrinter(string s);\\nint main(){string s=\\\"\";for(char c:s) {if(c == '\\\\' || c=='\\\"') cout << '\\\\'; cout << c;} cout << \"\\\";printPrinter(s); cout << s;}\" << endl;}";printPrinter(s); cout << s;}
+void printPrinter(string s) { cout << "#include<iostream>\n#include<string>\nusing namespace std;\nvoid printPrinter(string s);\nint main(){string s=\"";for(char c:s) {if(c == '\\' || c=='\"') cout << '\\'; cout << c;} cout << "\";printPrinter(s); cout << s;}" << endl;}
