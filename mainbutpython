@@ -1,0 +1,4 @@
+p = lambda s : print('s="'+''.join('\\'+c if c=='\\' or c== '\"' else c for c in s)+'"\nprint(s)\np(s)')
+s="p = lambda s : print('s=\"'+''.join('\\\\'+c if c=='\\\\' or c== '\\\"' else c for c in s)+'\"\\nprint(s)\\np(s)')"
+print(s)
+p(s)
